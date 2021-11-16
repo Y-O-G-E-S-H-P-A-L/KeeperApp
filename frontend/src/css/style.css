@@ -1,0 +1,116 @@
+/* <===== Header =====> */
+
+.header {
+  width: 100%;
+  display: flex;
+  padding: 0.75rem;
+  background: black;
+  color: rgb(82, 171, 240);
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+  letter-spacing: 2px;
+}
+
+/* <===== Add Keeper =====> */
+
+.addKeeper {
+  display: flex;
+  flex-direction: column;
+  background: rgb(0, 0, 0);
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 3rem auto;
+  width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 20px;
+}
+
+.inputBox {
+  border: none;
+  border-radius: 10px;
+  margin: 0.5rem;
+  padding: 1rem;
+  background: rgb(76, 76, 77);
+  outline: none;
+}
+
+.inputBox::placeholder {
+  color: rgb(167, 166, 166);
+}
+
+.titleInput {
+  font-size: 1rem;
+  color: rgb(82, 171, 240);
+}
+
+.description {
+  font-size: 1.1rem;
+  min-height: 100px;
+  min-width: 400px;
+  color: rgb(102, 201, 156);
+  resize: none;
+}
+
+.addButton {
+  width: 65%;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  background: linear-gradient(to bottom right, rgb(114, 248, 185), rgb(82, 171, 240));
+  margin: 0.5rem auto;
+  padding: 0.5rem 4.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.5) 0px -2px 6px 0px inset;
+  cursor: pointer;
+}
+.addButton:hover {
+  color: white;
+  background: linear-gradient(to bottom right, rgb(58, 129, 96), rgb(58, 102, 133));
+}
+
+/* <===== Show Keeper =====> */
+
+.showKeeper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.keeperCard {
+  display: flex;
+  flex-direction: column;
+  background: rgb(0, 0, 0);
+  padding: 2rem;
+  border-radius: 20px;
+  width: 300px;
+  min-height: 250px;
+  margin: 2rem;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 20px;
+}
+
+.title {
+  margin-bottom: 1rem;
+  color: rgb(82, 171, 240);
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.descriptionBox {
+  display: flex;
+  width: 100%;
+  resize: none;
+  flex: 1;
+  color: rgb(102, 201, 156);
+  outline: none;
+  background: black;
+  border: none;
+}
+
+.deleteIcon {
+  color: white;
+  position: absolute;
+  right: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
